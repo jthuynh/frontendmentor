@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./![responsive landing page](image.png))
+![responsive landing page](image.png)
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/mobile-first-responsive-landing-page-using-css-flexbox-rtOqwXtqL8)
+- Live Site URL: [Live Site](https://jthuynh.github.io/fe-blog-preview-card/)
 
 ## My process
 
