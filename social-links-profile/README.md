@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/mobile-first-responsive-social-links-profile-v_mWPntHpR)
-- Live Site URL: [Live Site](https://jthuynh.github.io/fe-social-links-profile/)
+- Live Site URL: [Live Site](https://jthuynh.github.io/frontendmentor/social-links-profile/)
 
 
 ### Built with

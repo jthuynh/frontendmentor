@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/mobile-first-responsive-landing-page-using-css-flexbox-rtOqwXtqL8)
-- Live Site URL: [Live Site](https://jthuynh.github.io/fe-blog-preview-card/)
+- Live Site URL: [Live Site](https://jthuynh.github.io/frontendmentor/blog-preview-card/)
 
 ## My process
 
