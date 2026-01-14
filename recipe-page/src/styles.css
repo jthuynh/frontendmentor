@@ -89,6 +89,11 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --rose-800: #7a284e;
   --rose-50: #fff7fb;
@@ -102,38 +107,142 @@ textarea:not([rows]) {
 
 @font-face {
   font-family: "Young Serif";
-  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
-  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  src: url("/recipe-page/assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
-  font-weight: normal;
+  src: url("/recipe-page/assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  src: url("/recipe-page/assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  src: url("/recipe-page/assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 body {
-  font-family: 'Young Serif', 'Outfit', serif;
+  font-family: "Young Serif", "Outfit", serif;
   font-size: 16px;
   min-height: 100dvh;
+}
+
+h1 {
+  font-weight: normal;
+  margin-top: rem;
+}
+
+hr {
+  border: none;
+  color: var(--stone-150);
+  background-color: var(--stone-150);
+  height: 1px;
+}
+
+summary,
+hr {
+  margin: 2rem;
+}
+
+summary > p {
+  font-family: "Outfit";
+  font-weight: 400;
+  color: var(--stone-600);
+}
+
+section {
+  margin: 2rem;
+}
+
+section h2 {
+  color: var(--brown-800);
+  font-weight: normal;
+}
+
+.prep,
+.ingredients ul,
+.instructions ol,
+.nutrition :not(:first-child) {
+  font-weight: 400;
+  font-family: "Outfit", serif;
+}
+.prep {
+  background-color: var(--rose-50);
+  padding: 0.5rem;
+  font-family: "Outfit", serif;
+  border-radius: 1rem;
+}
+
+h3 {
+  margin: 1rem;
+  color: var(--rose-800);
+}
+
+.prep ul,
+.ingredients ul,
+.instructions ol {
+  list-style-position: outside;
+  color: var(--stone-600);
+}
+
+.prep ul li,
+.ingredients ul li,
+.instructions ol li {
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+.prep ul li::marker {
+  padding-right: 1rem;
+}
+
+.ingredients ul,
+.instructions ol {
+  padding: 0 1rem;
+  font-weight: 400;
+  font-family: "Outfit", serif;
+}
+
+.ingredients ul li::marker,
+.instructions ol li::marker {
+  padding-right: 3rem;
+}
+
+.nutrition {
+  color: var(--stone-600);
+}
+
+.nutrition-table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row > div:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+  padding: 1rem 1.75rem;
+}
+
+.row > div {
+  padding: 1rem 1.75rem;
+}
+
+.nutrition-table .row:not(:first-child) > div {
+  color: var(--brown-800);
+  font-weight: bold;
 }
