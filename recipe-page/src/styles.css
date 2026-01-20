@@ -160,7 +160,8 @@ hr {
 }
 
 summary,
-hr {
+hr, 
+section {
   margin: 2rem 0;
 }
 
@@ -168,10 +169,6 @@ summary > p {
   font-family: "Outfit";
   font-weight: 400;
   color: var(--stone-600);
-}
-
-section {
-  margin: 2rem 0;
 }
 
 section h2 {
@@ -184,12 +181,12 @@ section h2 {
 .instructions ol,
 .nutrition :not(:first-child) {
   font-weight: 400;
-  font-family: "Outfit", serif;
+  font-family: "Outfit";
 }
 .prep {
   background-color: var(--rose-50);
   padding: 0.5rem;
-  font-family: "Outfit", serif;
+  font-family: "Outfit";
   border-radius: 1rem;
 }
 
@@ -220,7 +217,7 @@ h3 {
 .instructions ol {
   padding: 0 1.5rem;
   font-weight: 400;
-  font-family: "Outfit", serif;
+  font-family: "Outfit";
 }
 
 .ingredients ul li::marker,
