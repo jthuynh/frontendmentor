@@ -18,7 +18,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-recipe-page-x5_2qBo5f5)
 - Live Site URL: [Live Site](https://jthuynh.github.io/frontendmentor/recipe-page/)
 
 ### Built with
