@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$black: #1c232b;
+$grey: #6c7289;
+$cream: #f2eae2;
+$white: #ffffff;
+$lightgreen: #3d8168;
+$darkgreen: #1a4032;
+
+$breakpoint-mobile: 640px;
+
+body {
+  background-color: $cream;
+  font-family: "Fraunces", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border-radius: 0.5rem;
+  margin: 1rem;
+  background-color: $white;
+  picture > img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  section {
+    padding: 2rem;
+
+    .product-type,
+    .product-description,
+    .prices > span,
+    button {
+      font-family: "Montserrat", sans-serif;
+      color: $grey;
+    }
+
+    .product-type {
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      margin: 0;
+    }
+    .prices {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 1.5rem;
+        margin: 1rem 1rem 1rem 0;
+        color: $lightgreen;
+      }
+    }
+    button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      color: $white;
+      background-color: $lightgreen;
+      border: solid 1px $lightgreen;
+      font-weight: 600;
+      &:hover {
+        background-color: $darkgreen;
+        cursor: pointer
+      }
+    }
+  }
+}
+@media (min-width: $breakpoint-mobile) {
+  body, main {
+    overflow-y: hidden;
+  }
+
+  main {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 36.5rem;
+
+    picture,
+    section {
+      flex-basis: 100%;
+    }
+
+    picture > img {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0.5rem;
+    }
+
+  }
+}
