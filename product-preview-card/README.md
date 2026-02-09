@@ -20,7 +20,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/mobile-first-responsive-product-card-x9SM_rlk3l)
 - Live Site URL: [Live Site](https://jthuynh.github.io/frontendmentor/product-preview-card/)
 
 ## My process
