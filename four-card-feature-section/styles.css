@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --color-dark-grey: #4d4f62;
+  --color-light-grey: #6a7178;
+  --color-white: #fff;
+  --color-red: #ea5454;
+  --color-cyan: #44d3d2;
+  --color-blue: #549ef2;
+  --color-orange: #fcae4a;
+  --space-xs: clamp(0.75rem, 0.69rem + 0.29vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.38rem + 0.58vw, 1.875rem);
+  --space-l: clamp(2rem, 1.84rem + 0.78vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.77rem + 1.17vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.69rem + 1.55vw, 5rem);
+  --space-3xl: clamp(6rem, 5.53rem + 2.33vw, 7.5rem);
+  --space-xs-s: clamp(0.75rem, 0.59rem + 0.78vw, 1.25rem);
+  --space-s-m: clamp(1rem, 0.73rem + 1.36vw, 1.875rem);
+  --space-m-l: clamp(1.5rem, 1.19rem + 1.55vw, 2.5rem);
+  --space-l-xl: clamp(2rem, 1.46rem + 2.72vw, 3.75rem);
+  --space-l-2xl: clamp(2rem, 1.07rem + 4.66vw, 5rem);
+  --space-xl-2xl: clamp(3rem, 2.38rem + 3.11vw, 5rem);
+  --space-2xl-3xl: clamp(4rem, 2.91rem + 5.44vw, 7.5rem);
+  --size-step--2: clamp(0.6944rem, 0.6513rem + 0.1919vw, 0.8rem);
+  --size-step--1: clamp(0.8333rem, 0.7652rem + 0.303vw, 1rem);
+  --size-step-0: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+  --size-step-1: clamp(1.1875rem, 1.01rem + 0.87vw, 1.75rem);
+  --size-step-2: clamp(1.4375rem, 1.11rem + 1.65vw, 2.5rem);
+  --size-step-3: clamp(1.75rem, 1.19rem + 2.82vw, 3.5625rem);
+  --size-step-4: clamp(2.0625rem, 1.15rem + 4.56vw, 5rem);
+  --size-step-5: clamp(2.5rem, 1.08rem + 7.09vw, 7.0625rem);
+  --size-step-6: clamp(3rem, 0.84rem + 10.78vw, 9.9375rem);
+  --font-base: Poppins, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  --font-serif: Georgia, sans-serif;
+  --gutter: var(--space-s-m);
+  --tracking: -0.05ch;
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+  --shadow-color: 0deg 0% 0%;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-light-grey);
+  font-family: var(--font-base), var(--font-serif);
+  font-size: var(--size-step-1);
+  letter-spacing: var(--tracking);
+  line-height: 1.4;
+}
+
+header {
+  text-align: center;
+  padding: var(--space-m-l);
+}
+header h1:first-child {
+  font-weight: 200;
+}
+header h1 {
+  font-size: var(--size-step-2);
+  color: var(--color-dark-grey);
+}
+header p {
+  font-size: var(--size-step-0);
+  font-weight: 400;
+  margin-top: var(--space-xs);
+}
+
+.grid {
+  display: grid;
+  padding: var(--space-m);
+  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size), 1fr));
+  gap: var(--gutter, var(--space-l));
+}
+.grid > div {
+  font-size: var(--size-step--1);
+  padding: var(--space-l);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.6px 0.7px hsl(var(--shadow-color)/0.11), -0.4px 9.4px 11.6px -1.7px hsl(var(--shadow-color)/0.15);
+}
+.grid > div h2 {
+  font-size: var(--size-step-1);
+  color: var(--color-dark-grey);
+}
+.grid > div > img {
+  margin-top: var(--space-m-l);
+  justify-self: end;
+}
+.grid .supervisor {
+  border-top: 0.5rem solid var(--color-cyan);
+}
+.grid .team {
+  border-top: 0.5rem solid var(--color-red);
+}
+.grid .karma {
+  border-top: 0.5rem solid var(--color-orange);
+}
+.grid .calc {
+  border-top: 0.5rem solid var(--color-blue);
+}
+@media (450px < width <= 768px) {
+  .grid {
+    grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(0, 1fr));
+  }
+  .grid .calc {
+    grid-row: 5/span 2;
+    grid-column: 2/span 2;
+  }
+  .grid .team {
+    grid-row: 1/span 2;
+    grid-column: 2/span 2;
+  }
+  .grid .karma {
+    grid-row: 3/span 2;
+    grid-column: 3/span 2;
+  }
+  .grid .supervisor {
+    grid-row: 3/span 2;
+    grid-column: 1/span 2;
+  }
+}
+@media (width > 768px) {
+  .grid {
+    grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(0, 1fr));
+  }
+  .grid .calc {
+    grid-row: 2/span 2;
+    grid-column: 5/span 2;
+  }
+  .grid .team {
+    grid-row: 1/span 2;
+    grid-column: 3/span 2;
+  }
+  .grid .karma {
+    grid-row: 3/span 2;
+    grid-column: 3/span 2;
+  }
+  .grid .supervisor {
+    grid-row: 2/span 2;
+    grid-column: 1/span 2;
+  }
+}/*# sourceMappingURL=styles.css.map */
